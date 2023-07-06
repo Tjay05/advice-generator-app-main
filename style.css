@@ -21,9 +21,25 @@
     --dark-blue: hsl(150, 100%, 66%);
 }
 
+/* Reset Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+address {
+    font-style: normal;
+}
+
 /* Base styles */
 body {
-    background-color: var(--dark-gray-blue);
+    background-color: var(--gray-blue);
     font-family: 'Manrope', sans-serif;
 }
 
@@ -31,33 +47,56 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
 /* Mobile Styles */
 .container {
-    margin-block: 5rem;
+    margin-block-start: 5rem;
+    margin-block-end: 2rem;
     width: 95%;
+    max-width: 357px;
     margin-inline: auto;
-    background-color: var(--gray-blue);
+    background-color: var(--dark-gray-blue);
     border-radius: 10px;
     text-align: center;
-    padding-block: 1rem;
+}
+
+.wrapper {
+    padding-block-start: 3rem;
     padding-inline: 2rem;
 }
 
 p.adviceid {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
     color: var(--neon-green);
     text-transform: uppercase;
+    margin-block-end: 1rem;
 }
 
-p#adviceText {
+q#adviceText {
     color: var(--light-cyan);
-    font-size: 28px;
+    font-size: 1.5rem;
+    margin-block-end: 1rem;
+}
+
+img.pattern {
+    margin-block-start: 1.5rem;
+    margin-block-end: 2rem;
 }
 
 button {
+    width: 20%;
+    margin-block-end: -20px;
     border: none;
-    background-color: transparent;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+}
+
+button:hover {
+    box-shadow: 3px 3px 32px 8px var(--neon-green);
+    cursor: pointer;
 }
