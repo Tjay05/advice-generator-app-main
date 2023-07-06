@@ -27,11 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
+![](./images/desktop-view.png)
 ![](./images/mobile-view.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://tjay05.github.io/advice-generator-app-main/](https://tjay05.github.io/advice-generator-app-main/)
 
 ## My process
 
