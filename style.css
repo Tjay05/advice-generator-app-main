@@ -1,0 +1,63 @@
+/* 
+! Mobile-First Approach
+- Variables
+- Reset
+- Base Styles
+- Utility Styles
+- Mobile Styles
+- Tablet Styles
+- Desktop Styles 
+*/
+
+/* Variables */
+:root {
+    /* Primary colors */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    /* Neutral Colors */
+    --gray-blue: hsl(216, 16%, 43%);
+    --dark-gray-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(150, 100%, 66%);
+}
+
+/* Base styles */
+body {
+    background-color: var(--dark-gray-blue);
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Utility Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Styles */
+.container {
+    margin-block: 5rem;
+    width: 95%;
+    margin-inline: auto;
+    background-color: var(--gray-blue);
+    border-radius: 10px;
+    text-align: center;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+p.adviceid {
+    color: var(--neon-green);
+    text-transform: uppercase;
+}
+
+p#adviceText {
+    color: var(--light-cyan);
+    font-size: 28px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
