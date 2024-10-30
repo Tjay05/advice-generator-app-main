@@ -4,7 +4,7 @@ const adviceText = document.getElementById('adviceText');
 const handleClick = async()=> {
     const res = await fetch('https://api.adviceslip.com/advice');
     const data = await res.json();
-    // console.log(data);
+    
     adviceId.innerHTML = data.slip.id;
     adviceText.innerHTML = data.slip.advice;
 }
